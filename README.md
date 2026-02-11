@@ -1,66 +1,44 @@
 DoorDash Sales and Analytics Project
 
 Welcome to the DoorDash Sales and Analytics Project repository! 🚀
-This project demonstrates an end-to-end data analytics workflow, from raw transactional data to actionable business insights. Designed as a portfolio project, it highlights practical data analysis techniques used in real-world food delivery platforms.
+This project demonstrates a comprehensive data analytics solution, from exploring raw order data to generating actionable business insights. Designed as a portfolio project, it highlights practical data analysis techniques used in food delivery platforms.
 
 🏗️ Data Architecture
 
-The data architecture for this project follows a simple analytics pipeline inspired by real-world BI workflows.
+The data architecture for this project follows a simple analytics pipeline inspired by real-world BI workflows:
 
-Data Flow
-
-Raw Data → Cleaned Dataset → KPI Calculations → Visual Analytics → Business Insights
+Raw Data → Cleaned Data → KPI Layer → Visual Analytics
 
 Raw Layer:
-Contains the original order-level dataset with state, city, restaurant, dish, price, and ratings.
+Stores the original order-level dataset containing state, city, restaurant, dish, price, and ratings.
 
 Processed Layer:
-Data cleaning, type validation, and feature engineering for analysis.
+Includes data cleansing, validation, and transformation steps to prepare the dataset for analysis.
 
 Analytics Layer:
-KPI calculations and aggregated datasets used for charts and insights.
+Contains aggregated metrics and KPIs used for reporting and visualizations.
 
-📊 Project Overview
+📖 Project Overview
 
 This project involves:
 
-Data Preparation
+Data Exploration
+Importing and inspecting raw order-level data.
 
-Importing raw order-level data
-
-Checking metadata and data quality
-
-Validating data types
-
-Handling missing or inconsistent values
+Data Cleaning
+Handling data types, missing values, and inconsistencies.
 
 KPI Development
-
-Total sales calculation
-
-Average order value
-
-Customer rating analysis
-
-Total orders and rating counts
+Calculating core business metrics such as total sales, average rating, and order value.
 
 Analytics & Visualization
-
-Monthly sales trends
-
-Daily order patterns
-
-State-wise revenue distribution
-
-Top-performing cities
-
-Weekly and quarterly performance summaries
+Building trend charts and regional performance analysis to generate insights.
 
 🚀 Project Requirements
 Building the Analytics Solution (Data Analysis)
 Objective
 
-Develop a Python-based analytics solution to analyze food delivery order data and generate business insights for sales performance and customer satisfaction.
+Analyze DoorDash-style order data using Python to generate insights into sales performance, customer satisfaction, and regional trends.
 
 Specifications
 
@@ -72,15 +50,15 @@ Contains 100,000 order-level records
 
 Data Quality
 
-Validate column types
+Validate column data types
 
-Ensure numeric fields are correctly formatted
+Ensure numeric fields are properly formatted
 
 Check for missing or inconsistent values
 
 Integration
 
-Convert date fields into usable time hierarchies
+Convert order dates into time-based dimensions
 
 Aggregate data by month, week, state, and city
 
@@ -88,29 +66,29 @@ Scope
 
 Focus on exploratory data analysis (EDA)
 
-No historical data modeling required
+No historical data warehousing required
 
 Documentation
 
-Clear KPI definitions
+Define clear KPIs
 
-Structured analysis steps
+Provide structured analysis steps
 
-Visual charts and insights
+Include charts and business insights
 
-📈 Key Performance Indicators (KPIs)
+📊 Key Performance Indicators (KPIs)
 
-Total Sales – Overall revenue from orders
+Total Sales – Overall revenue generated from orders
 
 Average Rating – Customer satisfaction level
 
 Average Order Value (AOV) – Revenue per order
 
-Ratings Count – Total number of reviews
+Ratings Count – Total number of customer reviews
 
-Total Orders – Total number of orders placed
+Total Orders – Number of orders received
 
-📊 Visual Analytics
+📈 Visual Analytics
 
 The project includes the following charts:
 
@@ -127,3 +105,17 @@ Quarterly Performance Summary
 Top 5 Cities by Sales
 
 Weekly Trend Analysis
+
+🧰 Tools & Technologies
+
+Python
+
+Pandas – Data processing
+
+NumPy – Numerical operations
+
+Matplotlib – Visualizations
+
+Plotly – Interactive charts
+
+Jupyter Notebook
