@@ -1,68 +1,118 @@
-DoorDash Sales Analysis (Python Data Analytics Project)
-Project Overview
+DoorDash Sales and Analytics Project
 
-This project analyzes a DoorDash-style food delivery dataset to understand sales performance, customer satisfaction, and regional trends.
-The analysis follows a real-world business requirements approach, similar to industry data analytics projects.
+Welcome to the DoorDash Sales and Analytics Project repository! 🚀
+This project demonstrates an end-to-end data analytics workflow, from raw transactional data to actionable business insights. Designed as a portfolio project, it highlights practical data analysis techniques used in real-world food delivery platforms.
 
-The project includes:
+🏗️ Data Architecture
 
-Data cleaning and validation
+The data architecture for this project follows a simple analytics pipeline inspired by real-world BI workflows.
 
-KPI calculations
+Data Flow
 
-Time-based sales trends
+Raw Data → Cleaned Dataset → KPI Calculations → Visual Analytics → Business Insights
 
-Regional performance insights
+Raw Layer:
+Contains the original order-level dataset with state, city, restaurant, dish, price, and ratings.
 
-Top city analysis
+Processed Layer:
+Data cleaning, type validation, and feature engineering for analysis.
 
-Weekly and quarterly summaries
+Analytics Layer:
+KPI calculations and aggregated datasets used for charts and insights.
 
-Business Problem
+📊 Project Overview
 
-The goal of this analysis is to help a food delivery platform:
+This project involves:
 
-Understand overall revenue performance
+Data Preparation
 
-Identify top-performing states and cities
+Importing raw order-level data
 
-Analyze customer ratings and order behavior
+Checking metadata and data quality
 
-Detect sales trends across time periods
+Validating data types
 
-Support data-driven decision-making
+Handling missing or inconsistent values
 
-Dataset Description
+KPI Development
 
-The dataset contains 100,000 order-level records with the following columns:
+Total sales calculation
 
-Column	Description
-State	State where the order was placed
-City	City of the order
-Order Date	Date of order
-Restaurant Name	Restaurant fulfilling the order
-Location	Area within the city
-Category	Food category
-Dish Name	Ordered dish
-Price (USD)	Order price
-Rating	Customer rating
-Rating Count	Total ratings for the dish
+Average order value
 
-Each row represents a single order.
+Customer rating analysis
 
-Key Performance Indicators (KPIs)
+Total orders and rating counts
 
-Total Sales – Overall revenue generated from orders
+Analytics & Visualization
+
+Monthly sales trends
+
+Daily order patterns
+
+State-wise revenue distribution
+
+Top-performing cities
+
+Weekly and quarterly performance summaries
+
+🚀 Project Requirements
+Building the Analytics Solution (Data Analysis)
+Objective
+
+Develop a Python-based analytics solution to analyze food delivery order data and generate business insights for sales performance and customer satisfaction.
+
+Specifications
+
+Data Source
+
+Single transactional dataset in Excel format
+
+Contains 100,000 order-level records
+
+Data Quality
+
+Validate column types
+
+Ensure numeric fields are correctly formatted
+
+Check for missing or inconsistent values
+
+Integration
+
+Convert date fields into usable time hierarchies
+
+Aggregate data by month, week, state, and city
+
+Scope
+
+Focus on exploratory data analysis (EDA)
+
+No historical data modeling required
+
+Documentation
+
+Clear KPI definitions
+
+Structured analysis steps
+
+Visual charts and insights
+
+📈 Key Performance Indicators (KPIs)
+
+Total Sales – Overall revenue from orders
 
 Average Rating – Customer satisfaction level
 
 Average Order Value (AOV) – Revenue per order
 
-Ratings Count – Total number of customer reviews
+Ratings Count – Total number of reviews
 
-Total Orders – Total number of orders received
+Total Orders – Total number of orders placed
 
-Analytical Requirements (Charts)
+📊 Visual Analytics
+
+The project includes the following charts:
 
 Monthly Sales Trend
 
@@ -77,33 +127,3 @@ Quarterly Performance Summary
 Top 5 Cities by Sales
 
 Weekly Trend Analysis
-
-Tools & Technologies
-
-Python
-
-Pandas
-
-NumPy
-
-Matplotlib
-
-Plotly
-
-Jupyter Notebook
-
-Project Workflow
-
-Import required libraries
-
-Load dataset
-
-Perform data quality checks
-
-Validate data types
-
-Build KPIs
-
-Create trend charts
-
-Extract business insights
